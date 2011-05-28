@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
-	Name="ACE_ETCL_Parser"
-	ProjectGUID="{D756716B-FECA-1BAD-007E-8A67757B007A}"
-	RootNamespace="ACE_ETCL_Parser"
+	Version="8.00"
+	Name="QoS"
+	ProjectGUID="{AC7E1C9A-FECA-1BAD-7781-8A636757A7A3}"
+	RootNamespace="QoS"
 	Keyword="Win32Proj"
 	SignManifests="true"
 	>
@@ -22,7 +22,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Debug\ACE_ETCL_Parser_vc9\I386"
+			IntermediateDirectory="Debug\QoS_vc8\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -52,7 +52,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MPC_LIB_MODIFIER=\&quot;d\&quot;"
+				PreprocessorDefinitions="ACE_QoS_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS;MPC_LIB_MODIFIER=\&quot;d\&quot;"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -67,7 +67,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
+				PreprocessorDefinitions="_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS"
 				Culture="1033"
 				AdditionalIncludeDirectories="..\.."
 			/>
@@ -76,14 +76,14 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ACEd.lib ACE_ETCLd.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parserd.dll"
+				AdditionalDependencies="ACEd.lib"
+				OutputFile="$(OutDir)\ACE_QoSd.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parserd.lib"
+				ImportLibrary="..\..\lib\ACE_QoSd.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -105,7 +105,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Release\ACE_ETCL_Parser_vc9\I386"
+			IntermediateDirectory="Release\QoS_vc8\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -135,7 +135,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
+				PreprocessorDefinitions="ACE_QoS_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS"
 				RuntimeLibrary="2"
 				RuntimeTypeInfo="true"
 				WarningLevel="3"
@@ -147,7 +147,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
+				PreprocessorDefinitions="NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS"
 				Culture="1033"
 				AdditionalIncludeDirectories="..\.."
 			/>
@@ -156,8 +156,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ACE.lib ACE_ETCL.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parser.dll"
+				AdditionalDependencies="ACE.lib"
+				OutputFile="$(OutDir)\ACE_QoS.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
@@ -165,7 +165,7 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parser.lib"
+				ImportLibrary="..\..\lib\ACE_QoS.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -187,7 +187,7 @@
 		<Configuration
 			Name="Debug|x64"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Debug\ACE_ETCL_Parser_vc9\AMD64"
+			IntermediateDirectory="Debug\QoS_vc8\AMD64"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -217,7 +217,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MPC_LIB_MODIFIER=\&quot;d\&quot;"
+				PreprocessorDefinitions="ACE_QoS_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS;MPC_LIB_MODIFIER=\&quot;d\&quot;"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -232,7 +232,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN64"
+				PreprocessorDefinitions="_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS;_WIN64"
 				Culture="1033"
 				AdditionalIncludeDirectories="..\.."
 			/>
@@ -242,14 +242,14 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/machine:AMD64"
-				AdditionalDependencies="ACEd.lib ACE_ETCLd.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parserd.dll"
+				AdditionalDependencies="ACEd.lib"
+				OutputFile="$(OutDir)\ACE_QoSd.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parserd.lib"
+				ImportLibrary="..\..\lib\ACE_QoSd.lib"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -271,7 +271,7 @@
 		<Configuration
 			Name="Release|x64"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Release\ACE_ETCL_Parser_vc9\AMD64"
+			IntermediateDirectory="Release\QoS_vc8\AMD64"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -301,7 +301,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
+				PreprocessorDefinitions="ACE_QoS_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS"
 				RuntimeLibrary="2"
 				RuntimeTypeInfo="true"
 				WarningLevel="3"
@@ -313,7 +313,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN64"
+				PreprocessorDefinitions="NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;ACE_HAS_QOS;ACE_HAS_WINSOCK2_GQOS;_WIN64"
 				Culture="1033"
 				AdditionalIncludeDirectories="..\.."
 			/>
@@ -323,8 +323,8 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/machine:AMD64"
-				AdditionalDependencies="ACE.lib ACE_ETCL.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parser.dll"
+				AdditionalDependencies="ACE.lib"
+				OutputFile="$(OutDir)\ACE_QoS.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
@@ -332,7 +332,7 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parser.lib"
+				ImportLibrary="..\..\lib\ACE_QoS.lib"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -359,33 +359,51 @@
 			Name="Source Files"
 			Filter="cpp;cxx;cc;c;C">
 			<File
-				RelativePath="ETCL_Interpreter.cpp">
+				RelativePath="QoS_Decorator.cpp">
 			</File>
 			<File
-				RelativePath="ETCL_l.cpp">
+				RelativePath="QoS_Manager.cpp">
 			</File>
 			<File
-				RelativePath="ETCL_y.cpp">
+				RelativePath="QoS_Session_Factory.cpp">
+			</File>
+			<File
+				RelativePath="QoS_Session_Impl.cpp">
+			</File>
+			<File
+				RelativePath="SOCK_Dgram_Mcast_QoS.cpp">
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hh">
 			<File
-				RelativePath="ETCL_Interpreter.h">
+				RelativePath="ACE_QoS_Export.h">
 			</File>
 			<File
-				RelativePath="etcl_parser_export.h">
+				RelativePath="QoS_Decorator.h">
 			</File>
 			<File
-				RelativePath="ETCL_y.h">
+				RelativePath="QoS_Manager.h">
+			</File>
+			<File
+				RelativePath="QoS_Session.h">
+			</File>
+			<File
+				RelativePath="QoS_Session_Factory.h">
+			</File>
+			<File
+				RelativePath="QoS_Session_Impl.h">
+			</File>
+			<File
+				RelativePath="SOCK_Dgram_Mcast_QoS.h">
 			</File>
 		</Filter>
 		<Filter
 			Name="Build Files"
 			Filter="mpc;mpb;mwc">
 			<File
-				RelativePath="ETCL.mpc">
+				RelativePath="qos.mpc">
 				<FileConfiguration
 					Name="Debug|Win32"
 					ExcludedFromBuild="true"
@@ -412,7 +430,7 @@
 			Name="Pkgconfig Files"
 			Filter="pcin">
 			<File
-				RelativePath="ACE_ETCL_Parser.pc.in">
+				RelativePath="ACE_QoS.pc.in">
 				<FileConfiguration
 					Name="Debug|Win32"
 					ExcludedFromBuild="true"
@@ -432,6 +450,47 @@
 					Name="Release|x64"
 					ExcludedFromBuild="true"
 				>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Inline Files"
+			Filter="i;ipp;inl">
+			<File
+				RelativePath="QoS_Session_Impl.inl">
+			</File>
+			<File
+				RelativePath="SOCK_Dgram_Mcast_QoS.inl">
+			</File>
+		</Filter>
+		<Filter
+			Name="Documentation"
+			Filter="">
+			<File
+				RelativePath="README">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCCustomBuildTool"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|x64"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCCustomBuildTool"/>
 				</FileConfiguration>
 			</File>
 		</Filter>

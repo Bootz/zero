@@ -51,10 +51,10 @@ target_link_libraries(${EXECUTABLE_NAME}
 
 if(WIN32)
   target_link_libraries(${EXECUTABLE_NAME}
-    optimized ${MYSQL_LIBRARY}
-    optimized ${OPENSSL_LIBRARIES}
-    debug ${MYSQL_DEBUG_LIBRARY}
-    debug ${OPENSSL_DEBUG_LIBRARIES}
+    ${MYSQL_LIBRARY}
+    ${OPENSSL_LIBRARIES}
+    ${MYSQL_DEBUG_LIBRARY}
+    ${OPENSSL_DEBUG_LIBRARIES}
   )
   if(PLATFORM MATCHES X86)
     target_link_libraries(${EXECUTABLE_NAME})

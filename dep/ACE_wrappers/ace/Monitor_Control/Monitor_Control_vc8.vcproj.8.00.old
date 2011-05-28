@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
-	Name="ACE_ETCL_Parser"
-	ProjectGUID="{D756716B-FECA-1BAD-007E-8A67757B007A}"
-	RootNamespace="ACE_ETCL_Parser"
+	Version="8.00"
+	Name="Monitor_Control"
+	ProjectGUID="{B465937A-FECA-1BAD-D619-74620E01B14C}"
+	RootNamespace="Monitor_Control"
 	Keyword="Win32Proj"
 	SignManifests="true"
 	>
@@ -22,7 +22,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Debug\ACE_ETCL_Parser_vc9\I386"
+			IntermediateDirectory="Debug\Monitor_Control_vc8\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -52,7 +52,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MPC_LIB_MODIFIER=\&quot;d\&quot;"
+				PreprocessorDefinitions="MONITOR_CONTROL_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MPC_LIB_MODIFIER=\&quot;d\&quot;"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -76,14 +76,14 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ACEd.lib ACE_ETCLd.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parserd.dll"
+				AdditionalDependencies="ACEd.lib ACE_ETCLd.lib ACE_ETCL_Parserd.lib pdh.lib"
+				OutputFile="$(OutDir)\ACE_Monitor_Controld.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parserd.lib"
+				ImportLibrary="..\..\lib\ACE_Monitor_Controld.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -105,7 +105,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Release\ACE_ETCL_Parser_vc9\I386"
+			IntermediateDirectory="Release\Monitor_Control_vc8\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -135,7 +135,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
+				PreprocessorDefinitions="MONITOR_CONTROL_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
 				RuntimeLibrary="2"
 				RuntimeTypeInfo="true"
 				WarningLevel="3"
@@ -156,8 +156,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ACE.lib ACE_ETCL.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parser.dll"
+				AdditionalDependencies="ACE.lib ACE_ETCL.lib ACE_ETCL_Parser.lib pdh.lib"
+				OutputFile="$(OutDir)\ACE_Monitor_Control.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
@@ -165,7 +165,7 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parser.lib"
+				ImportLibrary="..\..\lib\ACE_Monitor_Control.lib"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -187,7 +187,7 @@
 		<Configuration
 			Name="Debug|x64"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Debug\ACE_ETCL_Parser_vc9\AMD64"
+			IntermediateDirectory="Debug\Monitor_Control_vc8\AMD64"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -217,7 +217,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MPC_LIB_MODIFIER=\&quot;d\&quot;"
+				PreprocessorDefinitions="MONITOR_CONTROL_BUILD_DLL;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;MPC_LIB_MODIFIER=\&quot;d\&quot;"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -242,14 +242,14 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/machine:AMD64"
-				AdditionalDependencies="ACEd.lib ACE_ETCLd.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parserd.dll"
+				AdditionalDependencies="ACEd.lib ACE_ETCLd.lib ACE_ETCL_Parserd.lib pdh.lib"
+				OutputFile="$(OutDir)\ACE_Monitor_Controld.dll"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parserd.lib"
+				ImportLibrary="..\..\lib\ACE_Monitor_Controld.lib"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -271,7 +271,7 @@
 		<Configuration
 			Name="Release|x64"
 			OutputDirectory="..\..\lib"
-			IntermediateDirectory="Release\ACE_ETCL_Parser_vc9\AMD64"
+			IntermediateDirectory="Release\Monitor_Control_vc8\AMD64"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -301,7 +301,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\.."
-				PreprocessorDefinitions="ETCL_PARSER_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
+				PreprocessorDefinitions="MONITOR_CONTROL_BUILD_DLL;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE"
 				RuntimeLibrary="2"
 				RuntimeTypeInfo="true"
 				WarningLevel="3"
@@ -323,8 +323,8 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/machine:AMD64"
-				AdditionalDependencies="ACE.lib ACE_ETCL.lib"
-				OutputFile="$(OutDir)\ACE_ETCL_Parser.dll"
+				AdditionalDependencies="ACE.lib ACE_ETCL.lib ACE_ETCL_Parser.lib pdh.lib"
+				OutputFile="$(OutDir)\ACE_Monitor_Control.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=".;..\..\lib"
@@ -332,7 +332,7 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				ImportLibrary="..\..\lib\ACE_ETCL_Parser.lib"
+				ImportLibrary="..\..\lib\ACE_Monitor_Control.lib"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -359,60 +359,138 @@
 			Name="Source Files"
 			Filter="cpp;cxx;cc;c;C">
 			<File
-				RelativePath="ETCL_Interpreter.cpp">
+				RelativePath="Auto_Update_Starter.cpp">
 			</File>
 			<File
-				RelativePath="ETCL_l.cpp">
+				RelativePath="BSD_Network_Interface_Monitor.cpp">
 			</File>
 			<File
-				RelativePath="ETCL_y.cpp">
+				RelativePath="Bytes_Received_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Bytes_Sent_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Constraint_Interpreter.cpp">
+			</File>
+			<File
+				RelativePath="Constraint_Visitor.cpp">
+			</File>
+			<File
+				RelativePath="CPU_Load_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="FreeBSD_Network_Interface_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Linux_Network_Interface_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Memory_Usage_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Monitor_Group.cpp">
+			</File>
+			<File
+				RelativePath="Monitor_Query.cpp">
+			</File>
+			<File
+				RelativePath="Null_Network_Interface_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Num_Threads_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Packets_Received_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Packets_Sent_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Solaris_Network_Interface_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Windows_Monitor.cpp">
+			</File>
+			<File
+				RelativePath="Windows_Multi_Instance_Monitor.cpp">
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hh">
 			<File
-				RelativePath="ETCL_Interpreter.h">
+				RelativePath="Auto_Update_Starter.h">
 			</File>
 			<File
-				RelativePath="etcl_parser_export.h">
+				RelativePath="BSD_Network_Interface_Monitor.h">
 			</File>
 			<File
-				RelativePath="ETCL_y.h">
+				RelativePath="Bytes_Received_Monitor.h">
+			</File>
+			<File
+				RelativePath="Bytes_Sent_Monitor.h">
+			</File>
+			<File
+				RelativePath="Constraint_Interpreter.h">
+			</File>
+			<File
+				RelativePath="Constraint_Visitor.h">
+			</File>
+			<File
+				RelativePath="CPU_Load_Monitor.h">
+			</File>
+			<File
+				RelativePath="FreeBSD_Network_Interface_Monitor.h">
+			</File>
+			<File
+				RelativePath="Linux_Network_Interface_Monitor.h">
+			</File>
+			<File
+				RelativePath="Memory_Usage_Monitor.h">
+			</File>
+			<File
+				RelativePath="Monitor_Control.h">
+			</File>
+			<File
+				RelativePath="Monitor_Control_export.h">
+			</File>
+			<File
+				RelativePath="Monitor_Control_utils.h">
+			</File>
+			<File
+				RelativePath="Monitor_Group.h">
+			</File>
+			<File
+				RelativePath="Monitor_Query.h">
+			</File>
+			<File
+				RelativePath="Null_Network_Interface_Monitor.h">
+			</File>
+			<File
+				RelativePath="Num_Threads_Monitor.h">
+			</File>
+			<File
+				RelativePath="Packets_Received_Monitor.h">
+			</File>
+			<File
+				RelativePath="Packets_Sent_Monitor.h">
+			</File>
+			<File
+				RelativePath="Solaris_Network_Interface_Monitor.h">
+			</File>
+			<File
+				RelativePath="Windows_Monitor.h">
+			</File>
+			<File
+				RelativePath="Windows_Multi_Instance_Monitor.h">
 			</File>
 		</Filter>
 		<Filter
 			Name="Build Files"
 			Filter="mpc;mpb;mwc">
 			<File
-				RelativePath="ETCL.mpc">
-				<FileConfiguration
-					Name="Debug|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|x64"
-					ExcludedFromBuild="true"
-				>
-				</FileConfiguration>
-			</File>
-		</Filter>
-		<Filter
-			Name="Pkgconfig Files"
-			Filter="pcin">
-			<File
-				RelativePath="ACE_ETCL_Parser.pc.in">
+				RelativePath="Monitor_Control.mpc">
 				<FileConfiguration
 					Name="Debug|Win32"
 					ExcludedFromBuild="true"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="8.00"
 	Name="ACE"
-	ProjectGUID="{BD537C9A-FECA-1BAD-6757-8A6300006755}"
+	ProjectGUID="{AD537C9A-FECA-1BAD-6757-8A6300006755}"
 	RootNamespace="ACE"
 	Keyword="Win32Proj"
 	SignManifests="true"
@@ -22,7 +22,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\lib"
-			IntermediateDirectory="Debug\ACE_vc9\I386"
+			IntermediateDirectory="Debug\ACE_vc8\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -60,7 +60,8 @@
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
 				DebugInformationFormat="3"
-				DisableSpecificWarnings="4355"
+				DisableSpecificWarnings="4355;4355;4244;4267;4748"
+				AdditionalOptions="/MP"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -105,7 +106,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\lib"
-			IntermediateDirectory="Release\ACE_vc9\I386"
+			IntermediateDirectory="Release\ACE_vc8\I386"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -140,7 +141,8 @@
 				RuntimeTypeInfo="true"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
-				DisableSpecificWarnings="4355"
+				DisableSpecificWarnings="4355;4355;4244;4267;4748"
+				AdditionalOptions="/MP"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -187,7 +189,7 @@
 		<Configuration
 			Name="Debug|x64"
 			OutputDirectory="..\lib"
-			IntermediateDirectory="Debug\ACE_vc9\AMD64"
+			IntermediateDirectory="Debug\ACE_vc8\AMD64"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -225,7 +227,8 @@
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
 				DebugInformationFormat="3"
-				DisableSpecificWarnings="4355"
+				DisableSpecificWarnings="4355;4355;4244;4267;4748"
+				AdditionalOptions="/MP"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -271,7 +274,7 @@
 		<Configuration
 			Name="Release|x64"
 			OutputDirectory="..\lib"
-			IntermediateDirectory="Release\ACE_vc9\AMD64"
+			IntermediateDirectory="Release\ACE_vc8\AMD64"
 			ConfigurationType="2"
 			CharacterSet="0"
 
@@ -306,7 +309,8 @@
 				RuntimeTypeInfo="true"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
-				DisableSpecificWarnings="4355"
+				DisableSpecificWarnings="4355;4355;4244;4267;4748"
+				AdditionalOptions="/MP"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
